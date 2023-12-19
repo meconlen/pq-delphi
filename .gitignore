@@ -33,3 +33,7 @@ ltmain.sh
 missing
 stamp-h1
 test-driver
+ar-lib
+config.h.in~
+configure.ac~
+configure~
