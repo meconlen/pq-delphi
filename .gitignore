@@ -37,3 +37,4 @@ ar-lib
 config.h.in~
 configure.ac~
 configure~
+.vscode
