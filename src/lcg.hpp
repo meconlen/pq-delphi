@@ -15,6 +15,7 @@ public:
    uint64_t randomize(void);
    uint64_t randomize(uint64_t s);
    uint64_t randomize(uint64_t year, uint64_t month, uint64_t day, uint64_t hour, uint64_t minute, uint64_t second, uint64_t ms);
+   uint64_t randomize(uint64_t hour, uint64_t minute, uint64_t second, uint64_t ms);
 
    uint64_t random(void);
    uint64_t random(uint64_t n);

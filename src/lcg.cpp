@@ -30,6 +30,14 @@ uint64_t lcg::randomize(uint64_t year, uint64_t month, uint64_t day, uint64_t ho
    return(old_seed);
 }
 
+uint64_t lcg::randomize(uint64_t hour, uint64_t minute, uint64_t second, uint64_t ms)
+{
+   uint64_t old_seed {seed};
+   seed = ms + second * 1000 + minute * 60000 + hour * 3600000;
+   return(old_seed);
+}
+
+
 uint64_t lcg::random(void)
 {
    seed = (a * seed + c) % m;

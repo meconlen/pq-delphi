@@ -7,7 +7,7 @@ libgtest_la_SOURCES = ../googletest/googletest/src/gtest-all.cc
 libgtest_la_CPPFLAGS = -I$(top_srcdir)/googletest/googletest/include -I$(top_srcdir)/googletest/googletest
 libgtest_la_LDFLAGS = -pthread
 
-bin_PROGRAMS = test find
+bin_PROGRAMS = test find simulate
 test_SOURCES = test.cpp lcg.cpp
 
 test_CPPFLAGS = -I ${top_srcdir}/googletest/googletest/include/
@@ -17,3 +17,7 @@ find_SOURCES = find.cpp lcg.cpp
 
 find_CPPFLAGS = -I ${top_srcdir}/googletest/googletest/include/
 find_LDFLAGS = -pthread -lm
+
+simulate_SOURCES = simulate.cpp lcg.cpp 
+simulate_LDFLAGS = -lm
+
